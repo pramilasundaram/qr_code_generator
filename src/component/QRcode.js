@@ -36,20 +36,20 @@ export default function QRcode() {
                 <CardBody>
                     <Form>
                         <FormGroup>
-                            <Label for="data">
+                            <Label for="data" className='title'>
                                 Data
                             </Label>
                             <Input
                                 id="data"
                                 name="data"
-                                placeholder=" enter ata"
+                                placeholder=" enter the data"
                                 type="text"
                                 value={data}
                                 onChange={(e) => setData(e.target.value)}
                             />
                         </FormGroup>
                         <FormGroup>
-                            <Label for="Width">
+                            <Label for="Width" className='title'>
                                 Width
                             </Label>
                             <Input
@@ -62,7 +62,7 @@ export default function QRcode() {
                             />
                         </FormGroup>
                         <FormGroup>
-                            <Label for="height">
+                            <Label for="height" className='title'>
                                 height
                             </Label>
                             <Input
@@ -75,11 +75,10 @@ export default function QRcode() {
                             />
                         </FormGroup>
                         <FormGroup>
-                            <Label for="Format">
+                            <Label for="Format" className='title'>
                                 Format
                             </Label>
-                            <select
-                                className='box'
+                            <select  className='box'                            
                                 id="format"
                                 value={format}
                                 onChange={(e) => setFormat(e.target.value)}
@@ -90,9 +89,8 @@ export default function QRcode() {
                             </select>
                         </FormGroup>
                         <FormGroup>
-                            <legendabel htmlFor="foregroundColor" className='title'>Foreground Color:</legendabel>
-                            <Input
-                                className='box'
+                            <label htmlFor="foregroundColor" className='title'>Foreground Color:</label>
+                            <Input                                
                                 type="color"
                                 id="foregroundColor"
                                 value={foregroundColor}
@@ -102,8 +100,6 @@ export default function QRcode() {
                         <FormGroup>
                             <Label htmlFor="backgroundColor" className='title'>Background Color:</Label>
                             <Input
-
-                                className='box'
                                 type="color"
                                 id="backgroundColor"
                                 value={backgroundColor}
