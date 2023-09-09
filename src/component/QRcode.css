@@ -1,0 +1,29 @@
+.text-center {
+    box-shadow: 2px 4px 8px 1px #888888;
+    margin: 40px 0px;
+}
+
+.title {
+    display: block;
+    float: left;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.box {
+    display: block;
+    width: 50%;
+    padding: 10px 20px;
+    border: 1px solid rgb(124, 124, 109);
+}
+
+.button_send {
+    margin: 20px 0;
+    background: #1875d2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    float: right;
+    border-radius: 7px;
+    border: none;
+}
